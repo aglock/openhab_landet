@@ -1,0 +1,11 @@
+[Unit]
+Description=Tellstick service daemon
+After=multi-user.target
+
+[Service]
+Type=forking
+ExecStart=/usr/local/sbin/telldusd
+
+[Install]
+WantedBy=multi-user.target
+
