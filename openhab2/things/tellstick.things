@@ -1,0 +1,14 @@
+Bridge tellstick:telldus-core:1 "Tellstick Duo" [resendInterval=200] {
+   switch Kontakt2 [protocol="arctech",model="selflearning-switch",name="Kontakt 2", deviceId="2"]
+   switch Kontakt3 [protocol="arctech",model="selflearning-switch",name="Kontakt 3", deviceId="3"]
+   switch Kontakt1 [protocol="arctech",model="selflearning-switch",name="Kontakt 1", deviceId="4"]
+   dimmer LampaUterum [protocol="arctech",model="selflearning-dimmer",name="Dimmer uterum", deviceId="5"]
+   dimmer LampaFasad [protocol="arctech",model="selflearning-dimmer",name="Dimmer fasad", deviceId="6"]
+   switch Ringklocka [protocol="arctech",model="selflearning-switch",name="Ringklocka", deviceId="7"]
+   sensor BadrumTemp [protocol="fineoffset",model="temperaturehumidity",name="Temperatur Badrum:167",deviceId="167_temperaturehumidity_fineoffset"]
+   sensor SovrumTemp [protocol="fineoffset",model="temperature",name="Temperatur Sovrum:138",deviceId="138_temperature_fineoffset"]
+   sensor UterumTemp [protocol="fineoffset",model="temperaturehumidity",name="Temperatur Uterum:199",deviceId="199_temperaturehumidity_fineoffset"]
+   sensor KylskapTemp [protocol="fineoffset",model="temperature",name="Temperatur Kylskap:151",deviceId="151_temperature_fineoffset"]
+   sensor KokTemp [protocol="fineoffset",model="temperaturehumidity",name="Temperatur Kok:135",deviceId="135_temperaturehumidity_fineoffset"]
+   sensor KallareTemp [protocol="fineoffset",model="temperaturehumidity",name="Temperatur Kallare:183",deviceId="183_temperaturehumidity_fineoffset"]
+}

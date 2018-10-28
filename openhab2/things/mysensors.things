@@ -1,0 +1,4 @@
+Bridge mysensors:bridge-eth:gateway [ ipAddress="127.0.0.1", tcpPort=5003, sendDelay=200 ] {
+     /** define things connected to that bridge here */
+
+  }

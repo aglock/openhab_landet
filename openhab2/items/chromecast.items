@@ -1,0 +1,10 @@
+Dimmer ccVolume "Volym" <soundvolume> (gChromecast) {channel="chromecast:chromecast:Living_Room:volume"}
+String ccApplication "Application" (gChromecast) {channel="chromecast:chromecast:Living_Room:appName"}
+String ccTitle "Title" {channel="chromecast:chromecast:Living_Room:title"}
+String ccSeries "Title" {channel="chromecast:chromecast:Living_Room:seriesTitle"}
+Image ccImage {channel="chromecast:chromecast:Living_Room:image"}
+Player ccControl <mediacontrol> (gChromecast) {channel="chromecast:chromecast:Living_Room:control"}
+String ccStatus "Status" {channel="chromecast:chromecast:Living_Room:statustext"}
+String ccMetadataType "Metadata" {channel="chromecast:chromecast:Living_Room:metadataType"}
+
+Group gChromecast "Chromecast" <screen> (gLivingroom)

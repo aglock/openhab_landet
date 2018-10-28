@@ -1,0 +1,37 @@
+sitemap bondegatan label="Bondegatan" {
+   Frame label="Temperaturer" {
+      Text item=Kok_Temperatur valuecolor=[Kok_Update=="Uninitialized"="gray",>=25="orange", >=15="green", 0="white", <15="blue"] label="Kök [%.1f °C]"
+      Text item=Sovrum_Temperatur valuecolor=[Sovrum_Update=="Uninitialized"="gray",>=25="orange", >=15="green", 0="white", <15="blue"] label="Sovrum [%.1f °C]"
+      Text item=Badrum_Temperatur valuecolor=[Badrum_Update=="Uninitialized"="gray",>=25="orange", >=15="green", 0="white", <15="blue"] label="Badrum [%.1f °C]"
+      Text item=Kallare_Temperatur valuecolor=[Kallare_Update=="Uninitialized"="gray",>=25="orange", >=15="green", 0="white", <15="blue"] label="Källare [%.1f °C]"
+      Text item=Uterum_Temperatur valuecolor=[Uterum_Update=="Uninitialized"="gray",>=25="orange", >=15="green", 0="white", <15="blue"] label="Uterum [%.1f °C]"
+   }
+   Frame label="Luftfuktighet" {
+      Text item=Kok_Humidity valuecolor=[Kok_Update=="Uninitialized"="gray",>=25="orange", >=15="green", 0="white", <15="blue"] label="Kök [%d %%]"
+      Text item=Badrum_Humidity valuecolor=[Badrum_Update=="Uninitialized"="gray",>=25="orange", >=15="green", 0="white", <15="blue"] label="Badrum [%d %%]"
+      Text item=Kallare_Humidity valuecolor=[Kallare_Update=="Uninitialized"="gray",>=25="orange", >=15="green", 0="white", <15="blue"] label="Källare [%d %%]"
+      Text item=Uterum_Humidity valuecolor=[Uterum_Update=="Uninitialized"="gray",>=25="orange", >=15="green", 0="white", <15="blue"] label="Uterum [%d %%]"
+   }
+   Frame label="Grupp" {
+      Default item=Temperatures
+   }
+   Frame label="Rum" {
+    Group item=gRooms
+
+   }
+
+    Frame label="Multimedia" {
+     Text label="Chromecast" icon="screen"{
+      Image item=ccImage
+      Slider item=ccVolume icon="soundvolume"
+      Text item=ccApplication label="Application [%s]"
+      Text item=ccTitle label="Title [%s]"
+      Text item=ccSeries label="Title [%s]"
+      Default item=ccControl
+      Text item=ccStatus label="Status [%s]"
+      Text item=ccMetadataType label="Metadatatype [%s]"
+     }
+   }
+
+
+}

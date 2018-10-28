@@ -1,0 +1,51 @@
+Number Badrum_Temperatur "Badrum [%.1f °C]" <temperature> (Temperatures, gBathroom) { channel="tellstick:sensor:tellstickgateway:BadrumTemp:temperature"}
+Number Badrum_Humidity "Badrum [%d %%]" <humidity> (gBathroom) { channel="tellstick:sensor:tellstickgateway:BadrumTemp:humidity"}
+DateTime Badrum_Update "Uppdaterad [%1$ta %1$tR]" <time> (gBathroom)
+
+Number Sovrum_Temperatur "Sovrum [%.1f °C]" <temperature> (gBedroom,Temperatures) { channel="tellstick:sensor:tellstickgateway:SovrumTemp:temperature"}
+DateTime Sovrum_Update "Uppdaterad [%1$ta %1$tR]" <time> (gBedroom)
+
+Number Uterum_Temperatur "Uterum [%.1f °C]" <temperature> (gTerrace) { channel="tellstick:sensor:tellstickgateway:UterumTemp:temperature"}
+Number Uterum_Humidity "Uterum [%d %%]" <humidity> (gTerrace) { channel="tellstick:sensor:tellstickgateway:UterumTemp:humidity"}
+DateTime Uterum_Update "Uppdaterad [%1$ta %1$tR]" <time> (gTerrace)
+
+Number Kylskap_Temperatur "Kylskap [%.1f °C]" <temperature> (gKitchen){ channel="tellstick:sensor:tellstickgateway:KylskapTemp:temperature"}
+DateTime Kylskap_Update "Uppdaterad [%1$ta %1$tR]" <time> (gKitchen)
+
+Number Kok_Temperatur "Kök [%.1f °C]" <temperature> (gKitchen,Temperatures) { channel="tellstick:sensor:tellstickgateway:KokTemp:temperature"}
+Number Kok_Humidity "Kök [%d %%]" <humidity> (gKitchen) { channel="tellstick:sensor:tellstickgateway:KokTemp:humidity"}
+DateTime Kok_Update "Updaterad [%1$ta %1$tR]" <time> (gKitchen)
+
+Number Kallare_Temperatur "Kallare [%.1f °C]" <temperature> (gCellar,Temperatures) { channel="tellstick:sensor:tellstickgateway:KallareTemp:temperature"}
+Number Kallare_Humidity "Kallare [%d %%]" <humidity> (gCellar){ channel="tellstick:sensor:tellstickgateway:KallareTemp:humidity"}
+DateTime Kallare_Update "Uppdaterad [%1$ta %1$tR]" <time> (gCellar)
+
+Switch Kontakt1 "Kontakt 1"  <contact> (gSwitches) { channel="tellstick:switch:tellstickgateway:Kontakt1:switch"}
+DateTime Kontakt1_Update "Uppdaterad [%1$ta %1$tR]" <time>
+
+Switch Kontakt2 "Kontakt 2"  <contact> (gSwitches) { channel="tellstick:switch:tellstickgateway:Kontakt2:switch"}
+DateTime Kontakt2_Update "Uppdaterad [%1$ta %1$tR]" <time>
+
+Switch Kontakt3 "Kontakt 3"  <contact> (gLivingroom, gSwitches) { channel="tellstick:switch:tellstickgateway:Kontakt3:switch"}
+DateTime Kontakt3_Update "Uppdaterad [%1$ta %1$tR]" <time>
+
+Dimmer LampaFasad_Brightness "Fasad dimmer" <lightbulb> (gTerrace) { channel="tellstick:dimmer:tellstickgateway:LampaFasad:dimmer"}
+Switch LampaFasad_Kontakt "Belysning fasad"  <contact> (gTerrace) { channel="tellstick:switch:tellstickgateway:LampaFasad:switch"}
+DateTime LampaFasad_Update "Uppdaterad [%1$ta %1$tR]" <time> (gTerrace)
+
+Dimmer LampaUterum_Brightness "Uterum dimmer" <lightbulb> (gTerrace) { channel="tellstick:dimmer:tellstickgateway:LampaUterum:dimmer"}
+Switch LampaUterum_Kontakt "Belysning uterum"  <contact> (gTerrace) { channel="tellstick:switch:tellstickgateway:LampaUterum:switch"}
+DateTime LampaUterum_Update "Uppdaterad [%1$ta %1$tR]" <time> (gTerrace)
+
+Switch Ringklocka "Ringklocka" { channel="tellstick:switch:tellstickgateway:Ringklocka:switch" }
+DateTime Ringklocka_Update "Uppdaterad [%1$ta %1$tR]" <time>
+
+Group:Number:AVG Temperatures "Medeltemperatur inne [%.1f °C]"
+Group gSwitches "Kontakter"
+Group gRooms "Rum"
+Group gKitchen "Kök" <kitchen> (gRooms)
+Group gCellar "Källare" <cellar> (gRooms)
+Group gBedroom "Sovrum" <bedroom> (gRooms)
+Group gBathroom "Badrum" <bath> (gRooms)
+Group gLivingroom "Vardagsrum" <livingroom> (gRooms)
+Group gTerrace "Veranda" <terrace> (gRooms)
