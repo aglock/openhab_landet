@@ -21,9 +21,10 @@ systemd-network:*:17813:0:99999:7:::
 systemd-resolve:*:17813:0:99999:7:::
 systemd-bus-proxy:*:17813:0:99999:7:::
 _apt:*:17813:0:99999:7:::
-pi:$6$oAHCmfg/$uJxKZP0oOHCaz5CzamfdyDb12tKfm9RsXP1M2MmzonMyChiudpmw2gEMHEdEefrkvnQ2O4vKdXzMUXexH3bF91:17813:0:99999:7:::
+pi:!$6$oAHCmfg/$uJxKZP0oOHCaz5CzamfdyDb12tKfm9RsXP1M2MmzonMyChiudpmw2gEMHEdEefrkvnQ2O4vKdXzMUXexH3bF91:17813:0:99999:7:::
 messagebus:*:17813:0:99999:7:::
 statd:*:17813:0:99999:7:::
 sshd:*:17813:0:99999:7:::
 avahi:*:17813:0:99999:7:::
 andreas:$6$B.Ho6rvX$gzrVjLyerYmwzhs0E14843Rth2FwMQ1/bm0m8pgY0eGhOYNFLBVGNsw6AE/RKsjt2hj5Y6/sj3g3wks9FPyEC1:17832:0:99999:7:::
+openhab:*:17832:0:99999:7:::

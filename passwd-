@@ -26,4 +26,5 @@ messagebus:x:105:109::/var/run/dbus:/bin/false
 statd:x:106:65534::/var/lib/nfs:/bin/false
 sshd:x:107:65534::/run/sshd:/usr/sbin/nologin
 avahi:x:108:112:Avahi mDNS daemon,,,:/var/run/avahi-daemon:/bin/false
-andreas:x:1001:1001::/home/andreas:/bin/bash
+andreas:x:1001:1001:Andreas Gloeckner,,,:/home/andreas:/bin/bash
+openhab:x:109:113::/var/lib/openhab2:/bin/false

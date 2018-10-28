@@ -18,7 +18,7 @@ voice:x:22:
 cdrom:x:24:pi
 floppy:x:25:
 tape:x:26:
-sudo:x:27:pi
+sudo:x:27:pi,andreas
 audio:x:29:pi
 dip:x:30:
 www-data:x:33:

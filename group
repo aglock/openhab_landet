@@ -54,3 +54,4 @@ spi:x:999:pi
 i2c:x:998:pi
 gpio:x:997:pi
 andreas:x:1001:
+openhab:x:113:
